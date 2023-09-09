@@ -3,4 +3,6 @@ jai shree ram
 jai bharat
 jai maharashtra"""
 
-print(str)
+name='devansh'
+
+print("rohu," +name)
