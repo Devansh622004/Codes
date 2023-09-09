@@ -17,3 +17,23 @@ print("rohu," +name)
 print(name[0:4])
 print(name[2:4])
 print(name[1:4])
+
+print(name[0:])
+print(name[:5])
+
+print(str[-4:-2])
+
+########### IF YOU WANT TO SKIP ONE  or more CHARACTER ############
+
+print(str[0:4:3])
+print(str[::2])
+
+
+
+print(str[::])
+
+print(str[::5000])
+
+############## IF YOU ENTER A STRING LENGTH GREATER THAN ACTUAL LENGTH OF STRING ################
+
+print(name[:390000])
