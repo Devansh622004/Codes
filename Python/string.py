@@ -29,6 +29,7 @@ print(str[0:4:3])
 print(str[::2])
 
 
+print(name[::-1])
 
 print(str[::])
 
