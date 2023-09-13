@@ -7,12 +7,3 @@ print(name.capitalize())
 
 
 
-
-
-
-
-
-
-
-
-

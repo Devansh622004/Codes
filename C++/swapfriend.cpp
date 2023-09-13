@@ -11,12 +11,12 @@ class first
     public:
             void get()
             {
-                cout<<"ENTER TWO NO.\n";
+                cout<<"ENTER THE VALUE OF a:-\t";
                 cin>>a;
             }
             void display()
             {
-                cout<<"THE NO. IS :-\n"<<a;
+                cout<<"\nTHE NO. IS :-\t"<<a;
             }
             friend void swap( first, second);
 };
@@ -28,12 +28,12 @@ class second
     public:
             void get()
             {
-                cout<<"ENTER TWO NO.\n";
+                cout<<"ENTER THE VALUE OF b:-\t";
                 cin>>b;
             }
             void display()
             {
-                cout<<"THE NO. IS :-\n"<<b;
+                cout<<"\nTHE NO. IS :-\t"<<b;
             }
             friend void swap( first , second );
 };
