@@ -31,9 +31,9 @@ Complex ::Complex(int x, int y) // ----> This is a parameterized constructor as 
 int main()
 {
 
-    // Implicit call
-    Complex a(4, 6);
-    a.printNumber();
+    // Implicit call                 // ---
+    Complex a(4, 6);                 //   | ALSO KNOWN AS SHORTHAND METHOD.
+    a.printNumber();                 // ---
 
     // Explicit call
     Complex b = Complex(5, 7);
