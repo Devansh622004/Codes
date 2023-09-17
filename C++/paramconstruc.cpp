@@ -32,8 +32,8 @@ int main()
 {
 
     // Implicit call                 // ---
-    Complex a(4, 6);                 //   | ALSO KNOWN AS SHORTHAND METHOD.
-    a.printNumber();                 // ---
+    Complex a(4, 6); //   | ALSO KNOWN AS SHORTHAND METHOD.
+    a.printNumber(); // ---
 
     // Explicit call
     Complex b = Complex(5, 7);
