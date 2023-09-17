@@ -10,7 +10,7 @@ class complex
         complex();                            // CONSTRUCTOR DECLARATION
 };
 
-complex :: complex()                          // CONSTRUCTOR DEFINATION
+complex :: complex()   // DEFAULT CONSTRUCTORS   // CONSTRUCTOR DEFINATION
 {
     a = 2;
     b = 4;
