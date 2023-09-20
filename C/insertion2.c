@@ -24,7 +24,7 @@ void main()
     a[p-1] = item;
     n++;
 
-    for (int i = 0; a[i] <= n; i++)
+    for (int i = 0; i < n; i++)
     {
         printf("%d", a[i]);
         printf("\n");
