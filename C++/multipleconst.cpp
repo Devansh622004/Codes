@@ -40,13 +40,11 @@ public:
 
 int main()
 {
-    Complex c1(4, 6);
+    Complex c1(4, 6), c2(5), c3;
     c1.printNumber();
 
-    Complex c2(5);
     c2.printNumber();
 
-    Complex c3;
     c3.printNumber();
     return 0;
 }
