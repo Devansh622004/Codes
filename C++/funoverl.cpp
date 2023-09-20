@@ -5,19 +5,13 @@ class over
 {
     int a,l,b,s;
     float r;
+    
     public:
-        // void get();
         void area(int x, int y);
         void area(float d);
         void area(int e);
         void display();
 };
-
-// void over :: get()
-// {
-//     cout<<"ENTER THE LENGTH & BREADTH OF RECTANGLE, RADIUS OF CIRCLE & SIDE OF SQUARE\n";
-//     cin>>l>>b>>r>>s;
-// }
 
 void over :: area(int x,int y)
 {
