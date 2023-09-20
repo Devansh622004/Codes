@@ -21,7 +21,8 @@ void main()
 
     n--;
     
-    for (int i = 0; a[i] <= n; i++)
+    printf("DELETION RESULTS INTO:\n");
+    for (int i = 0; i < n; i++)
     {
         printf("%d", a[i]);
         printf("\n");
