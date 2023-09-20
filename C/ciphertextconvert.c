@@ -11,6 +11,4 @@ void main()
     }
 
     printf("THE CIPHER TEXT IS: %s", st);
-
-    //printf("THE PLAIN TEXT IS: %s", st);
 }
