@@ -8,7 +8,7 @@ class code
 public:
     code() {}
     code(int a) { id = a; }
-    code(code &x)                                   // COPY CONSTRUCTOR
+    code(code &x) // COPY CONSTRUCTOR
     {
         id = x.id;
     }
