@@ -1,4 +1,5 @@
 # include<stdio.h>
+# include<ctype.h>
 void main()
 {
     char st[10],i;
@@ -7,7 +8,10 @@ void main()
 
     for(i = 0; st[i] !='\0'; i++)
     {
-        st[i] = st[i] + 1;
+        if(isalpha(st[i]))
+        {
+            st[i] = st[i] + 1;
+        }
     }
 
     printf("THE CIPHER TEXT IS: %s", st);
