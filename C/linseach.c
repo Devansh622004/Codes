@@ -10,8 +10,7 @@ void main()
     {
         if (a[i] == x)
         {
-            t++;
-            printf("%d is existed %d times in the array\n", x, t);
+            printf("%d is existed at %dth position in the array\n", x, i+1);  
         }
     }
 }
