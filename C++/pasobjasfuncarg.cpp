@@ -11,7 +11,7 @@ class complex
 };
 
 complex :: complex()             /*DEFAULT CONSTRUCTORS(TAKES NO ARGU.) &&
-                                  CONSTRUCTOR DEFINATION */
+                                   CONSTRUCTOR DEFINATION */
 {
     a = 2;
     b = 4;

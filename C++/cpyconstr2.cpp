@@ -8,10 +8,10 @@ class code
 public:
     code() {}
     code(int a) { id = a; }
-    code(code &x) // COPY CONSTRUCTOR
-    {
-        id = x.id;
-    }
+    //code(code &x) // COPY CONSTRUCTOR
+    // {
+    //     id = x.id;
+    // }
 
     void display() { cout << id; }
 };
@@ -19,7 +19,9 @@ public:
 int main()
 {
     code A(100);
-    code B(A);
+    //code B(A);         
+    code B;         
+    B = A;
     code C = A;
     code D;
     D = A;
