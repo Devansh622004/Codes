@@ -26,17 +26,18 @@ public:
 
     void display()
     {
-        cout<<real<<"+"<<img<<"i"<<endl;
+        cout << real << "+" << img << "i" << endl;
     }
 };
 
 int main()
 {
-    complex p, q(4,5), r(6,7);
+    complex p, q(4, 5), r(6, 7);
     q.display();
     r.display();
 
-    p = q+r;
+    p = q + r; // previous value of p(i.e 0+i0) is overwrite here.
+    // or   p = q.operator+(r);
 
     p.display();
 
