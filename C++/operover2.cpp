@@ -16,11 +16,11 @@ public:
         real = x;
         img = y;
     }
-    complex operator-(complex c1)//normal function having return type complex
+    complex operator*(complex c1) // normal function having return type complex
     {
         complex c;
-        c.real = real + c1.real;
-        c.img = img + c1.img;
+        c.real = real * c1.real;
+        c.img = img * c1.img;
         return c;
     }
 
@@ -37,7 +37,7 @@ int main()
     q.display();
     r.display();
 
-    p = q - r; // previous value of p(i.e 0+i0) is overwrite here.
+    p = q * r; // previous value of p(i.e 0+i0) is overwrite here.
     // or   p = q.operator+(r);
 
     p.display();
