@@ -1,36 +1,30 @@
 #include <stdio.h>
 #include <string.h>
 
-struct contacts
+typedef struct contacts
 {
-    char name[20];
-    char phno[20];
-};
+    char name[25];
+    char phone[20];
+} person;
 
-void main()
+int main()
 {
-    struct contacts people[2];
-    char n[20];
+    int i;
+    char user[25];
+    person per[2] = {{"Krishna", "+91-7906400988"}, {"Devansh", "+91-8473874394"}};
 
-    people[0].name[20] = "meher";
-    people[0].phno[20] = "+91-8449914409";
+    printf("\nEnter Name : ");
+    scanf("%s", &user);
 
-    people[1].name[20] = "sai";
-    people[1].phno[20] = "+91-8923221777";
-    
-    printf("SEARCH BOX: ");
-    gets(n);
-
-//	int temp = strcmp(people[i].name, n);
-    for (int i = 0; i < 2; i++)
+    for (i=0; i<2; i++)
     {
-    	int temp = strcmp(people[i].name, n);
-    	printf("%d", temp);
-        if (strcmp(people[i].name, n) == 0)
+        if (strcmp(per[i].name, user) == 0)
         {
-            printf("Phone Number: %s", people[i].phno);
+            printf("\nContact Found !");
+            printf("\nPhone Number : %s", per[i].phone);
+            return 0;
         }
-	}
-	printf("THIS CONTACT IS NOT EXIST\n");
-    return 1;
+    }
+    printf("\nContact Not Found !");
+    return 0;
 }
