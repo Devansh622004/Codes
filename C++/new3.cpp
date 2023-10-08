@@ -12,6 +12,5 @@ int main()
         int a = 5;
     }
 
-    delete p; 
 return 0;
 }
