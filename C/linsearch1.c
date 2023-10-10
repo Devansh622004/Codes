@@ -1,3 +1,6 @@
+// TIME COMPLEXITY OF LINEAR SEARCH IS ----> O(n)
+
+
 #include <stdio.h>
 void main()
 {

@@ -1,5 +1,12 @@
-# include<stdio.h>
-void main()
+# include<iostream.h>
+# include<string.h>
+using namespace std;
+int main()
 {
-	printf("hey buddy \"hello\" yooo");
+    int n;
+    cin>>n;
+    char arr[n];
+    cout<<strlen(arr);
+
+return 0;
 }

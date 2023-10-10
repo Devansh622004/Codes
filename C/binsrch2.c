@@ -1,3 +1,6 @@
+//   TIME COMPLEXITY OF BINARY SEARCH IS ---->    O(log n)
+
+
 #include <stdio.h>
 void main()
 {
