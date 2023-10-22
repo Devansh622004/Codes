@@ -7,22 +7,30 @@ struct node
     struct node *next;
 };
 
-void traverse(struct node *ptr)
+void traverse(struct node *ptr) // TRAVERSING
 {
     while (ptr != NULL)
     {
-        printf("ELEMENTS: %d\n", ptr->data);
+        printf("ELEMENT: %d\n", ptr->data);
         ptr = ptr->next;
     }
 }
 
-struct node *inser(struct node *ptr, int data)
+struct node *insertAtIndex(struct node *head, int data, int index)
 {
-    struct node *p;
-    p = (struct node *)malloc(sizeof(struct node));
+    struct node *ptr = (struct node *)malloc(sizeof(struct node));
+    struct node *p = head;
+    int i = 0;
+
+    while (i != index - 1)
+    {
+        p = p->next;
+        i++;
+    }
+    ptr->data = data;
+    ptr->next = p->next;
     p->next = ptr;
-    p->data = data;
-    return p;
+    return head;
 }
 
 int main()
@@ -46,7 +54,12 @@ int main()
     fourth->next = NULL;
 
     traverse(head);
-    head = inser(head, 69);
+
+    int a, p;
+    printf("ENTER THE NO. & THE POSITION WHERE YOU WANT TO INSERT YOUR NODE: \n");
+    scanf("%d\n%d", &a, &p);
+
+    head = insertAtIndex(head, a, p);
     printf("UPDATED LINKED LIST: \n");
     traverse(head);
 
