@@ -54,10 +54,11 @@ int main()
     printf("ENTER THE DATA ELEMENT WHICH YOU WANT TO INSERT AFTER A SPECIFIC NODE: \n");
     scanf("%d", &a);
 
-    // printf("ENTER THE NO. OF NODE AFTER WHICH YOU WANT TO INSERT YOUR NEW NODE: \n");
-    // printf("ENTER ONE AMONG [ first, sec, third, fourth ]\n");
-    // scanf("%d", &n);
-    head = insertAfterNode(head, sec, a);
+    printf("ENTER THE NO. OF NODE AFTER WHICH YOU WANT TO INSERT YOUR NEW NODE: \n");
+    printf("ENTER ONE AMONG [ 1, 2, 3, 4]\n");
+    scanf("%s", &n);
+
+    head = insertAfterNode(head, n, a);
     printf("UPDATED LINKED LIST: \n");
     traverse(head);
 
