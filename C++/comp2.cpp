@@ -29,7 +29,7 @@ complex complex :: sum(complex o1, complex o2)
 
 int main()
 {
-    complex c1(2,3);
+    complex c1(2,3), c3;
     complex c2(3,4);
 
     
