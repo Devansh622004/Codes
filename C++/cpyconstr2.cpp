@@ -8,10 +8,10 @@ class code
 public:
     code() {}
     code(int a) { id = a; }
-    //code(code &x) // COPY CONSTRUCTOR
-    // {
-    //     id = x.id;
-    // }
+    code(code &x) // COPY CONSTRUCTOR
+    {
+        id = x.id;
+    }
 
     void display() { cout << id; }
 };

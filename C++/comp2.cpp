@@ -4,7 +4,7 @@ using namespace std;
 class complex
 {
     int a, b;
-    public:
+    public: 
         complex(){}                            // CONSTRUCTOR DECLARATION
         complex(int x, int y)
         {
