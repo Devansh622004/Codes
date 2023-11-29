@@ -22,11 +22,14 @@ public:
 int main()
 {
     int size = 3;
+
     ShopItem *ptr = new ShopItem[size];
     ShopItem *ptrTemp = ptr;
-    int p, i;
+
+    int p;
     float q;
-    for (i = 0; i < size; i++)// ENTERING DATA.
+
+    for (int i = 0; i < size; i++)// ENTERING DATA.
     {
         cout << "Enter Id and price of item " << i + 1 << endl;
         cin >> p >> q;
@@ -35,10 +38,10 @@ int main()
         ptr++;
     }
 
-    for (i = 0; i < size; i++)// PRINTING DATA.
+    for (int i = 0; i < size; i++)// PRINTING DATA.
     {
         cout << "Item number: " << i + 1 << endl;
-        ptrTemp->getData();
+        (*ptrTemp).getData();
         ptrTemp++;
     }
 

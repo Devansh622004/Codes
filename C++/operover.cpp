@@ -19,8 +19,8 @@ public:
     complex operator-(complex c1)//normal function having return type complex
     {
         complex c;
-        c.real = real + c1.real;
-        c.img = img + c1.img;
+        c.real = real - c1.real;
+        c.img = img - c1.img;
         return c;
     }
 
