@@ -13,7 +13,7 @@ class Complex
     int a, b;
 
 public:
-    Complex(int, int); // Constructor declaration
+    Complex(int, int){}; // Constructor declaration
 
     void printNumber()
     {
