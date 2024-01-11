@@ -16,9 +16,9 @@ void traverse(struct node *ptr) // TRAVERSING
     }
 }
 
-struct node *insertAtIndex(struct node *head, int data, int index)
+struct node *insertAtmid(struct node *head, int data, int index)
 {
-    struct node *ptr = (struct node *)malloc(sizeof(struct node));
+    struct node *nwnode = (struct node *)malloc(sizeof(struct node));
     struct node *p = head;
     int i = 0;
 
@@ -27,9 +27,9 @@ struct node *insertAtIndex(struct node *head, int data, int index)
         p = p->next;
         i++;
     }
-    ptr->data = data;
-    ptr->next = p->next;
-    p->next = ptr;
+    nwnode->data = data;
+    nwnode->next = p->next;
+    p->next = nwnode;
     return head;
 }
 

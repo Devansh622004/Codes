@@ -14,8 +14,8 @@ struct node *insrt(struct node *head)
     int a;
     printf("ENTER THE DATA YOU WANT TO INSERT: \n");
     scanf("%d", &a);
-    
-    if (head ==NULL)
+
+    if (head == NULL)
     {
         nwnode->data = a;
         nwnode->next = NULL;
@@ -39,7 +39,7 @@ void main()
 {
     struct node *head;
 
-    head = NULL;  // head IS A SIMPLE POINTER OF (struct node*) TYPE SO THAT IT CAN STORES THE ADDRESS OF NODE OF TYPE (STRUCT NODE*).
+    head = NULL; // head IS A SIMPLE POINTER OF (struct node*) TYPE SO THAT IT CAN STORES THE ADDRESS OF NODE OF TYPE (STRUCT NODE*).
     // HEAD IS A SIMPLE BLOCK . THERE IS NOT ANY NEXT OR DATA PART OF THE head EXISTS.
 
     int n;

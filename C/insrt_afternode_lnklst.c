@@ -18,12 +18,12 @@ void traverse(struct node *ptr) // TRAVERSING
 
 struct node *insertAfterNode(struct node *head, struct node *prevNode, int data)
 {
-    struct node *ptr = (struct node *)malloc(sizeof(struct node));
-    ptr->data = data;
+    struct node *nwnode = (struct node *)malloc(sizeof(struct node));
 
-    ptr->next = prevNode->next;
-    prevNode->next = ptr;
+    nwnode->data = data;
+    nwnode->next = prevNode->next;
 
+    prevNode->next = nwnode;
     return head;
 }
 

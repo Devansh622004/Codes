@@ -43,7 +43,7 @@ int main()
  
     // Terminate the list at the third node
     fourth->data = 66;
-    fourth->next = NULL;
+    fourth->next = head;
  
     linkedListTraversal(head);
     return 0;

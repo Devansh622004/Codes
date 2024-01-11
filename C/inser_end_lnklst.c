@@ -18,16 +18,17 @@ void traverse(struct node *ptr) // TRAVERSING
 
 struct node *insertAtend(struct node *head, int data)
 {
-    struct node *ptr = (struct node *)malloc(sizeof(struct node));
-    ptr->data = data;
+    struct node *nwnode = (struct node *)malloc(sizeof(struct node));
     struct node *p = head;
 
     while (p->next != NULL)
     {
         p = p->next;
     }
-    p->next = ptr;
-    ptr->next = NULL;
+    p->next = nwnode;
+    
+    nwnode->data = data;
+    nwnode->next = NULL;
     return head;
 }
 
