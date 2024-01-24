@@ -1,3 +1,47 @@
 {
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "MeherMySQLConnection",
+            "database": "mystore",
+            "username": "devansh",
+            "password": "meherbaba7"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "MeherSql",
+            "database": "mydb",
+            "username": "devansh622004",
+            "password": "meherbaba7"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mystore",
+            "database": "mydb",
+            "username": "chaos622004",
+            "askForPassword": true
+        }
+    ]
 }

@@ -16,6 +16,7 @@ struct node *del_at_btwn(struct node *head, int index)
     while(i == index - 1)
     {
         p = p->next;
+        i++;
     } 
     q = p->next;
     p->next = q->next;
@@ -178,10 +179,19 @@ struct node *create(struct node *h, struct node *p)
 
 void traverse(struct node *z)
 {
+    if(z == NULL)
+    {
+        printf("List is empty.");
+    }
+    else
+    {
+    printf("Nodes of the circular linked list: \n");  
+    
     while (z != NULL)
     {
         printf("ELEMENT: %d\n", z->data);
         z = z->next;
+    }  
     }
 }
 
