@@ -1,0 +1,1 @@
+print("JAI SHREE RAM\n"  * 5)
