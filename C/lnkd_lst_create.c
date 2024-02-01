@@ -179,18 +179,20 @@ struct node *create(struct node *h, struct node *p)
 
 void traverse(struct node *z)
 {
-    if(z == NULL)
+    struct node *ptr = z;
+    if(ptr == NULL)
     {
         printf("List is empty.");
+        return;
     }
     else
     {
-    printf("Nodes of the circular linked list: \n");  
+    printf("Nodes of the Singly linked list: \n");  
     
-    while (z != NULL)
+    while (ptr != NULL)
     {
-        printf("ELEMENT: %d\n", z->data);
-        z = z->next;
+        printf("ELEMENT: %d\n", ptr->data);
+        ptr = ptr->next;
     }  
     }
 }

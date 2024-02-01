@@ -4,10 +4,11 @@
 struct node
 {
     int data;
+    struct node *prev;
     struct node *next;
 };
 
-struct node *create(struct node *h, struct node *p)
+struct node *create(struct node *head, struct node *tail)
 {
     int element;
     printf("\n*ENTER (-1) TO STOP THE CREATION OF LINKED LIST*\n\n");
@@ -21,60 +22,53 @@ struct node *create(struct node *h, struct node *p)
         nwnode->data = element;
         nwnode->next = NULL;
 
-        if (h == NULL)
+        if (head == NULL)
         {
-            h = nwnode;
-            p = nwnode;
-            nwnode->next = h;
+            head = nwnode;
+            tail = nwnode;
+            nwnode->prev = NULL;
         }
 
         else
         {
-            p->next = nwnode;
-            p = p->next;
-            p->next = h;
+            tail->next = nwnode;
+            nwnode->prev = tail;
+            tail = tail->next;
         }
-
         printf("ENTER THE ELEMENTS:\n");
         scanf("%d", &element);
     }
-
-    return h;
+    return head;
 }
 
 void traverse(struct node *z)
 {
     struct node *ptr = z;
-    if(z == NULL)
+    if(ptr == NULL)
     {
-        printf("List is empty");
+        printf("List is empty.");
         return;
     }
     else
     {
-        printf("Node of the circular linked list:\n");
-    do
+    printf("Nodes of the Doubly linked list: \n");  
+    while (ptr != NULL)
     {
         printf("ELEMENT: %d\n", ptr->data);
         ptr = ptr->next;
-    } while (ptr != z);
-
-    printf("\n");
+    }  
     }
 }
 
 void main()
 {
-    struct node *head, *ptr;
-
+    struct node *head, *tail;
     head = (struct node *)malloc(sizeof(struct node));
-    ptr = (struct node *)malloc(sizeof(struct node));
+    tail = (struct node *)malloc(sizeof(struct node));
 
     head = NULL;
-    ptr = NULL;
+    tail = NULL;
 
-    head = create(head, ptr);
-
-    printf("LINKED LIST: \n");
-    traverse(head);
+    head = create(head, tail);
+    traverse(head); 
 }
