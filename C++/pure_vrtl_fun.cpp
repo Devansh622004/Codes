@@ -18,7 +18,6 @@ public:
 class derived : public base
 {
     int y;
-
 public:
     void fun()
     {

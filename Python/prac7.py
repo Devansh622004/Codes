@@ -9,7 +9,7 @@ def main():
 def table(n):
     for i in range(n+1):
         mul = i * 1
-        print(i, " * ", "1", " = ", mul, end="")
+        print(i, " * ", "1", " = ", mul, end="❤️")
         i = i + 1
         print()
 

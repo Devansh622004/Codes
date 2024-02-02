@@ -1,19 +1,35 @@
-# include<stdio.h>
-# define N 10
+#include <stdio.h>
+#define N 10
 
 int arr[N];
 int top = 0;
 
-void PUSH()
+void POP()
 {
-    int element;
-    if(top == N)
+    if (top == 0)
     {
-        printf("PUSH operation can't possible\n");
+        printf("STACK IS EMPTY\n");
     }
     else
     {
-        printf("ENTER THE ELEMENT: ");
+        top--;
+        printf("POP(ed) ELEMENT IS: %d", arr[top]);
+    }
+}
+
+void PUSH()
+{
+    int element, el, i;
+    printf("ENTER THE NO. OF ELEMENTS: ");
+    scanf("%d", &el);
+    for (i = 0; i < el; i++)
+    {
+        if (top == N)
+        {
+            printf("PUSH operation can't possible\n");
+            return;
+        }
+        printf("Enter element:\n");
         scanf("%d", &element);
         arr[top] = element;
         top++;
@@ -22,26 +38,27 @@ void PUSH()
 
 void traverse()
 {
-    if(top == 0)
+    int i;
+    if (top == 0)
     {
         printf("THE STACK IS EMPTY\n");
     }
     else
     {
-        for(int i = top; i > 0; i--)
+        for (i = top - 1; i >= 0; i--)
         {
-            printf("ELEMENTS: %d\n", arr[top]);
+            printf("ELEMENTS: %d\n", arr[i]);
         }
     }
 }
 
 void main()
 {
-    int Push, Traverse, Pop, Peek;
-    printf("ENTER (1) TO PERFORM PUSH() OPERATION\nENTER (1) TO NOT PERFORM PUSH() OPERATION\n");
+    int Push, Traver, Pop, Peek;
+    printf("ENTER (1) TO PERFORM PUSH() OPERATION\nENTER (0) TO NOT PERFORM PUSH() OPERATION\n");
     printf("I: ");
     scanf("%d", &Push);
-    if(Push == 1)
+    if (Push == 1)
     {
         PUSH();
     }
@@ -50,10 +67,10 @@ void main()
         printf("PUSH() OPERATION IS NOT PERFORMED AS PER YOUR DESIRE\n");
     }
 
-    printf("ENTER (1) TO PERFORM Traverse() OPERATION\nENTER (1) TO NOT PERFORM traverse() OPERATION");
+    printf("ENTER (1) TO PERFORM Traverse() OPERATION\nENTER (0) TO NOT PERFORM traverse() OPERATION\n");
     printf("I: ");
-    scanf("%d", &Traverse);
-    if(Traverse == 1)
+    scanf("%d", &Traver);
+    if (Traver == 1)
     {
         traverse();
     }
@@ -62,4 +79,15 @@ void main()
         printf("Traverse() OPERATION IS NOT PERFORMED AS PER YOUR DESIRE\n");
     }
 
+    printf("ENTER (1) TO PERFORM POP() OPERATION\nENTER (0) TO NOT PERFORM traverse() OPERATION\n");
+    printf("I: ");
+    scanf("%d", &Pop);
+    if (Pop == 1)
+    {
+        POP();
+    }
+    else
+    {
+        printf("Pop() OPERATION IS NOT PERFORMED AS PER YOUR DESIRE\n");
+    }
 }
