@@ -1,5 +1,10 @@
-// IF YOU WANT TO RUN FUNCTION OF BASE CLASS BY USING DERIVED CLASS.
-// -->  BY USING SCOPE RESOLUTION OPERATOR.
+// IF YOU WANT TO RUN FUNCTION OF BASE CLASS BY USING BASE CLASS.
+// -->  BY USING POINTER.
+
+
+// --> ALSO KNOWN AS RUN TIME POLYMORPHISM.
+
+
 # include<iostream>
 using namespace std;
 
@@ -23,8 +28,12 @@ class B: public A
 
 int main()
 {
+    A *ptr;
     B obj;
-    obj.A::display();
+
+    ptr = &obj;
+    ptr->display();
+    // obj.A::display();
 
 return 0;
 }
