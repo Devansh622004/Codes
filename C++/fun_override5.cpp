@@ -1,9 +1,7 @@
 // IF YOU WANT TO RUN FUNCTION OF BASE CLASS BY USING BASE CLASS.
 // -->  BY USING POINTER.
 
-
 // --> ALSO KNOWN AS RUN TIME POLYMORPHISM.
-
 
 # include<iostream>
 using namespace std;

@@ -18,11 +18,14 @@ public:
 class derived : public base
 {
     int y;
+
 public:
     void fun()
     {
-        cout<<"fun() called"<<endl;
-        cout<<"coordinates are:"<<endl<<x<<endl<<y;
+        cout << "fun() called" << endl;
+        cout << "coordinates are:" << endl
+             << x << endl
+             << y;
     }
     void gety()
     {
