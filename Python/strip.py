@@ -1,3 +1,5 @@
-name = input("ENTER THE NAME:")
-name = name.strip()
-print("HELLO, ", name)
+name = "*********meherba*********"
+print(name.rstrip('*'))
+print(name.lstrip('*'))
+print(name.strip('*'))
+
