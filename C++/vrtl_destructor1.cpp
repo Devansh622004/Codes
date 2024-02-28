@@ -9,7 +9,7 @@ public:
         cout << "CONSTRUCTING BASE\n";
     }
 
-    ~base()
+    virtual ~base()
     {
         cout << "DESTRUCTING BASE\n";
     }
@@ -19,7 +19,7 @@ class derived : public base
 {
 public:
     derived()
-    {
+{
         cout << "CONSTRUCTING DERIVED\n";
     }
 
@@ -31,9 +31,10 @@ public:
 
 int main()
 {
-    derived *d = new derived;
-    base *b = d;
+    // derived *d = new derived; 
+     derived dr;
+    // base *b = d;
 
-    delete b;
+    // delete b;
     return 0;
 }
