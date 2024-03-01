@@ -17,7 +17,7 @@ void main()
     {
         printf("%d\n",a[i]);
     }
-
+// SORTING PROCESS 
     for(i=0;i<s;i++)
     {
         for(j=0;j<s;j++)
@@ -30,8 +30,8 @@ void main()
             }
         }
     }
-    printf("\n SORTED ARRAY IS");
-    for(i=0;i<=s;i++)
+    printf("\nSORTED ARRAY IS:-\n");
+    for(i=1;i<=s;i++)
     {
         printf("%d\n",a[i]);
     }
