@@ -1,3 +1,6 @@
+// TO PROTECT OUR PROGRAM FROM AMBIGUITY
+// WE USE SCOPE RESOLUTION OPERATOR( :: )
+
 #include <iostream>
 using namespace std;
 
@@ -11,6 +14,10 @@ public:
     {
         a = x;
     }
+    void put()
+    {
+        cout << "THE VALUE OF a IS: " << a << endl;
+    }
 };
 
 class base2
@@ -23,15 +30,23 @@ public:
     {
         b = y;
     }
+    void put()
+    {
+        cout << "THE VALUE OF b IS: " << b << endl;
+    }
 };
 
 class derived : public base1, public base2
 {
 public:
-    void show()
+    void put()
     {
-        cout << "THE VALUE OF a IS: " << a << endl;
-        cout << "THE VALUE OF a IS: " << b << endl;
+        base1::put();
+        base2::put();
+        // cout << "HELOOOOOOOOOOOOOOOOOO\n";
+    }
+    void sum()
+    {
         cout << "THE SUM OF a & b IS: " << a + b << endl;
     }
 };
@@ -39,10 +54,13 @@ public:
 int main()
 {
     derived dr;
-    dr.get_a(5);
-    dr.get_b(2);
 
-    dr.show();
-    
+    dr.get_a(5);
+    dr.get_b(50);
+
+    dr.put();
+
+    dr.sum();
+
     return 0;
 }
