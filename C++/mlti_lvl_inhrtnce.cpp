@@ -18,7 +18,7 @@ public:
     }
 };
 
-class test
+class test : public student
 {
 protected:
     int mrks_maths;
@@ -36,7 +36,7 @@ public:
     }
 };
 
-class result : public test, public student
+class result : public test
 {
 public:
     float totalmrks()
@@ -65,7 +65,7 @@ int main()
 
     ram.get_mrks();
 
-   // ram.totalmrks();
+    // ram.totalmrks();
 
     ram.display();
 

@@ -18,7 +18,7 @@ public:
     }
 };
 
-class test : public student
+class test : virtual public student
 {
 protected:
     int subject_1;
@@ -45,7 +45,7 @@ public:
     }
 };
 
-class sports
+class sports : virtual public student
 {
 protected:
     int badminton;
@@ -90,7 +90,7 @@ int main()
 {
     result ram;
     ram.get_roll_no();
-    ram.put_roll_no();
+    ram.put_roll_no(); 
 
     ram.get_mrks();
     ram.put_mrks();
