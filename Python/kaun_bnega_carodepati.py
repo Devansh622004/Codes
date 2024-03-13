@@ -5,7 +5,7 @@ lst = ["1)What is the highest mountain peak in the Indian subcontinent?",
        "5)What is the least populous state in India?"]
 
 cash = 50
-sum = 0
+
 
 def questions(n):
        match n:
@@ -21,7 +21,7 @@ def questions(n):
                      else:
                             print("INCORRECT ANSWER")
                             print("CORRECT ANSWER IS: C) KANGCHENJUNGA")
-                            print("YOU LOSE Rs.",cash)
+                            print("YOU LOSE Rs.", cash)
 
               case 1:
                      print(lst[1])
