@@ -8,7 +8,8 @@ class A
 public:
     A(int x, int y) : a(x), b(y)
     {
-        cout << "THE VALUE OF a AND b IS: " << a << "\t" << b << endl;
+        cout << "THE VALUE OF a IS: " << a << endl;
+        cout << "THE VALUE OF b IS: " << b << endl;
     }
 };
 
