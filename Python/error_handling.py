@@ -9,3 +9,5 @@ try:
 
 except :
     print("SORRY WRONG INPUT TYPE.")
+
+print("END OF THE PROGRAM")
