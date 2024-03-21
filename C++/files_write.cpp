@@ -13,7 +13,7 @@ int main()
     string st = "WELCOME TO MEHER FILE.";
     ofstream open("files_write.txt");
 
-    open << "JAI MEHER BABA." << endl;
+    open << " JAI MEHER BABA. " << endl;
     open << st;
 
     open.close();
