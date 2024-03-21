@@ -17,3 +17,5 @@ int main()
 
     return 0;
 }
+
+// HERE "ofstream" IS A CLASS AND "out" IS THE OBJECT OF THAT CLASS.
