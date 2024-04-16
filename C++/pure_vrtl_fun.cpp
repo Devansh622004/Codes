@@ -7,7 +7,7 @@ protected:
     int x;
 
 public:
-    virtual void fun() = 0;
+    virtual void fun() = 0;  // PURE VIRT. FUNC.
     void getx()
     {
         cout << "ENTER x: ";

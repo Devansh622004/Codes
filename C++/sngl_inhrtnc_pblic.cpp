@@ -1,42 +1,44 @@
-# include<iostream>
+#include <iostream>
 using namespace std;
 
-class B
+class B // BASE CLASS
 {
-    private:
-            int a;
-    public:
-            int b;
-            void setab()
-            {
-                cout<<"ENTER THE VALUES OF a and b\n";
-                cin>>a>>b;
-            }
-            int geta()
-            {
-                return a;
-            }
-            void showa()
-            {
-                cout<<"THE VALUE OF a: "<<geta()<<endl;
-            }
+private:
+    int a;
+
+public:
+    int b;
+    void setab()
+    {
+        cout << "ENTER THE VALUES OF a and b\n";
+        cin >> a >> b;
+    }
+    int geta()
+    {
+        return a;
+    }
+    void showa()
+    {
+        cout << "THE VALUE OF a: " << geta() << endl;
+    }
 };
 
-class D : public B
+class D : public B // DERIVED CLASS
 {
-    private:
-            int c;
-    public:
-            void mult()
-            {
-                c = geta() * b;
-            }
-            void display()
-            {
-                cout<<"a: "<<geta()<<endl; 
-                cout<<"b: "<<b<<endl; 
-                cout<<"c: "<<c<<endl; 
-            }
+private:
+    int c;
+
+public:
+    void mult()
+    {
+        c = geta() * b;
+    }
+    void display()
+    {
+        cout << "a: " << geta() << endl;
+        cout << "b: " << b << endl;
+        cout << "c: " << c << endl;
+    }
 };
 
 int main()
@@ -52,5 +54,5 @@ int main()
     d1.b = 20;
     d1.display();
 
-return 0;
+    return 0;
 }
