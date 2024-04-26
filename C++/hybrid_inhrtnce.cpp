@@ -52,5 +52,8 @@ int main()
     d2.get_a_2(10);
     d2.put_a_2();
 
+    derive_3 d3;
+    d3.put_a_3();
+
     return 0;
 }
