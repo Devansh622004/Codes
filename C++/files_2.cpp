@@ -10,7 +10,7 @@ int main()
 {
     // USING CONSTRUCTOR TO :-
     // 1) OPEN A FILE
-    // 2) WRITING IN A FILE
+    // 2) READING A FILE
     string st2;
     ifstream in("files_1.txt");
     in >> st2;  // WHICH IGNORES " "(i.e SPACES) AND "\n"(i.e. NEW LINE)
