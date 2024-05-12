@@ -14,7 +14,7 @@ void swaping(T &x, T &y)
 int main()
 {
     int x, y;
-    cout << "ENTER TWO NO.\n";
+    cout << "ENTER TWO NO. OF TYPE (int)\n";
     cin >> x >> y;
     swaping(x, y);
     cout << "\nTHE VALUES AFTER SWAPPING ARE:-\n";
@@ -22,7 +22,7 @@ int main()
     cout << y;
 
     float a, b;
-    cout << "\nENTER TWO NO.\n";
+    cout << "\nENTER TWO NO. OF TYPE (float)\n";
     cin >> a >> b;
     swaping(a, b);
     cout << "\nTHE VALUES AFTER SWAPPING ARE:-\n";
