@@ -1,59 +1,104 @@
 #include <iostream>
 using namespace std;
 
-class base
+class student
 {
 protected:
-    int a;
-};
+    int roll_no;
 
-class derive_1 : virtual public base
-{
 public:
-    void get_a_1(int m)
+    void get_roll_no()
     {
-        a = m;
+        cout << "ENTER THE STUDENT ROLL NUMBER\n";
+        cin >> roll_no;
     }
-    void put_a_1()
+    void put_roll_no()
     {
-        cout << "THE VALUE OF a IS:" << a << endl;
-    }
-};
-
-class derive_2 : virtual public base
-{
-public:
-    void get_a_2(int m)
-    {
-        a = m;
-    }
-    void put_a_2()
-    {
-        cout << "THE VALUE OF a IS:" << a << endl;
+        cout << "STUDENT's ROLL NUMBER IS: " << roll_no << endl;
     }
 };
 
-class derive_3 : public derive_1, public derive_2
+class test : public student
+{
+protected:
+    int subject_1;
+    int subject_2;
+
+public:
+    void get_mrks()
+    {
+        cout << "ENTER THE MARKS (OUT OF 100):\n";
+        cout << "subject_1: ";
+        cin >> subject_1;
+
+        cout << "subject_2: ";
+        cin >> subject_2;
+    }
+    void put_mrks()
+    {
+        cout << "THE MARKS (OUT OF 100) ARE:\n";
+        cout << "subject_1: ";
+        cout << subject_1 << endl;
+
+        cout << "subject_2: ";
+        cout << subject_2 << endl;
+    }
+};
+
+class sports 
+{
+protected:
+    int badminton;
+    int volleyball;
+
+public:
+    void get_score()
+    {
+        cout << "ENTER THE SCORE (OUT OF 100):\n";
+        cout << "badminton: ";
+        cin >> badminton;
+
+        cout << "volleyball: ";
+        cin >> volleyball;
+    }
+    void put_score()
+    {
+        cout << "THE MARKS (OUT OF 100) ARE:\n";
+        cout << "badminton: ";
+        cout << badminton << endl;
+
+        cout << "volleyball: ";
+        cout << volleyball << endl;
+    }
+};
+
+class result : public test, public sports
 {
 public:
-    void put_a_3()
+    void display()
     {
-        cout << "THE VALUE OF a IS:" << a << endl;
+        int total_marks = subject_1 + subject_2;
+        int total_score = badminton + volleyball;
+
+        cout << "ROLL NO: " << roll_no << endl;
+        cout << "TOTAL MARKS (OUT OF 200): " << total_marks << endl;
+        cout << "TOTAL SCORE (OUT OF 200): " << total_score << endl;
     }
 };
 
 int main()
 {
-    derive_1 d1;
-    d1.get_a_1(5);
-    d1.put_a_1();
+    result ram;
+    ram.get_roll_no();
+    ram.put_roll_no(); 
 
-    derive_2 d2;
-    d2.get_a_2(10);
-    d2.put_a_2();
+    ram.get_mrks();
+    ram.put_mrks();
 
-    derive_3 d3;
-    d3.put_a_3();
+    ram.get_score();
+    ram.put_score();
+
+    ram.display();
 
     return 0;
 }

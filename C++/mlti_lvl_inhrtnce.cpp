@@ -18,7 +18,7 @@ public:
     }
 };
 
-class test : public student
+class test : public student    // INTERMEDIATE BASE CLASS
 {
 protected:
     int mrks_maths;
@@ -60,12 +60,12 @@ public:
 int main()
 {
     result ram;
-    ram.get();
-    ram.put();
+    ram.get();   // I/P ROLL NO.
+    ram.put();   // PRINT ROLL NO.
 
-    ram.get_mrks();
+    ram.get_mrks();  // I/P MARKS
 
-    // ram.totalmrks();
+    // ram.totalmrks();    --> AUTOMATICALLY CALLED IN "display()" FUNCTION.
 
     ram.display();
 
