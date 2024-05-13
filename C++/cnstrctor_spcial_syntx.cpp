@@ -27,7 +27,7 @@ public:
     }
 };
 
-class derived : public base_1, public base_2
+class derived : public base_1, virtual public base_2
 {
     int c, d;
 
