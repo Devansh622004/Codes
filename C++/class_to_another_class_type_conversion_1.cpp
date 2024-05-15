@@ -1,11 +1,9 @@
 //  ONE CLASS TO ANOTHER CLASS TYPE CONVERSION USING "CASTING OPERATOR FUNCTION".
 #include <iostream>
 using namespace std;
-
 class rectangle
 {
     int len, bret, area;
-
 public:
     rectangle(int l, int b)
     {
@@ -20,11 +18,9 @@ public:
         cout << "\nAREA: " << area << endl;
     }
 };
-
 class triangle
 {
     int base, hieght, area;
-
 public:
     triangle(int b, int h)
     {

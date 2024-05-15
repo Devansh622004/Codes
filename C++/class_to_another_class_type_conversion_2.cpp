@@ -1,11 +1,9 @@
 //  ONE CLASS TO ANOTHER CLASS TYPE CONVERSION USING "CASTING OPERATOR FUNCTION".
 #include <iostream>
 using namespace std;
-
 class triangle
 {
     int base, hieght, area;
-
 public:
     triangle(int b, int h)
     {
@@ -28,11 +26,9 @@ public:
         return hieght;
     }
 };
-
 class rectangle
 {
     int len, bret, area;
-
 public:
     void show()
     {
@@ -47,13 +43,11 @@ public:
         area = len * bret;
     }
 };
-
 int main()
 {
     triangle t(2, 3);
     rectangle r = t; // TRIANGLE TO RECTANGLE TYPE CONVERSION.        TRIANGLE IS THE "DESTINATION TYPE".
     t.display();
     r.show();
-
     return 0;
 }
