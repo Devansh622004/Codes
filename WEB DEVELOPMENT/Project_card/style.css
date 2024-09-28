@@ -1,0 +1,51 @@
+div{
+    background-color: rgb(230, 218, 241);
+    border-radius: 10%;
+    width: 320px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+img{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 280px;
+    height: 250px;
+    border-radius: 10%;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+}
+
+#first{
+    margin-left: 25px;
+}
+
+#second{
+    margin-left: 10px;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+#description{
+    margin-left: 20px;
+    font-style: italic;
+    font-family:cursive;
+}
+
+#third{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin-left: 110px;
+    color: white;
+    background-color: rgb(167, 122, 208);
+}
+
