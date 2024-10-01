@@ -1,9 +1,16 @@
+body{
+    background-image: url(https://img.freepik.com/premium-photo/magical-mystical-landscape-wallpaper-purple-tones_1234738-288857.jpg?w=1060);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
 div{
     background-color: rgb(230, 218, 241);
     border-radius: 10%;
     width: 320px;
     width: 300px;
     margin: 0 auto;
+    opacity: 0.7;
 }
 
 
