@@ -1,29 +1,14 @@
-# include <stdio.h>
-
-int main(void)
+# include<stdio.h>
+void main()
 {
-    int i, j, t, n;
-
-    do
+    int x,i;
+    for(x=1;x<=4;x++)
     {
-        printf("Height: ");
-        scanf("%d", &n);
-    }
-    while(n < 1 || n > 8);
-
-    for(i = 1; i <= n; i++)
-    {
-        for(t = i; t < n; t++)
+        for(i=1;i<=x;i++)
         {
-            printf(" ");
+            printf("%d",i);
         }
-        for(j = 1; j < i; j++)
-        {
-            printf("#");
-        }
+            printf("\n");
 
-        printf("\n");
     }
-
-    return 0;
 }
