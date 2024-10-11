@@ -1,52 +1,54 @@
 # include<iostream>
 using namespace std;
 
-void swap1(int,int);
-void swap2(int &m,int &n);
-void swap3(int *s,int *t);
-
+void swap(int,int);
+void swapref(int *m,int *n);
+void swappoint(int &s,int &t);
 int main()
 {
 	int a,b;
-	cout<<"ENTER TWO NO.\n";
+	cout<<"enter two no."<<endl;
 	cin>>a>>b;
-	swap1(a,b);
+	cout<<"after swapping:\n";
+	swap(a,b);
 	
-	cout<<"ENTER TWO NO.\n";
+	cout<<"\nagain enter two no."<<endl;
 	cin>>a>>b;
-	
-	swap2(a,b);
-	cout<<a<<endl<<b<<endl;
-	
-	cout<<"ENTER TWO NO.\n";
+    swapref(&a,&b);
+    cout<<"after swapping by using call by reference\n";
+    cout<<a<<endl<<b;
+    
+    cout<<"\nagain enter two no."<<endl;
 	cin>>a>>b;
-	
-	swap3(&a,&b);
-	cout<<a<<endl<<b;
-	return 0;	
+    swappoint(a,b);
+    cout<<"after swapping by using call by pointer\n";
+    cout<<a<<endl<<b;
+	return 0;
 }
-
-void swap1(int x,int y)
+void swap(int x,int y)
 {
-	int t;
-	t=x;
+	int z;
+	z=x;
 	x=y;
-	y=t;
-	cout<<x<<endl<<y<<endl;
+	y=z;
+	cout<<x<<endl<<y;
 }
 
-void swap2(int &m,int &n)
+void swapref(int *m,int *n)
 {
-	int t;
-	t=m;
-	m=n;
-	n=t;
+    int temp;
+    temp=*m;
+    *m=*n;
+    *n=temp;
 }
 
-void swap3(int *s,int *t)
+void swappoint(int &s,int &t)
 {
-	int o;
-	o=*s;
-	*s=*t;
-	*t=o;
+	int num;
+	num=s;
+	s=t;
+	t=num;
 }
+
+
+
