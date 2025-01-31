@@ -1,13 +1,21 @@
-#include <iostream>
-#include <string.h>
+# include<iostream>
+# include<string.h>
 using namespace std;
 int main()
-{
-    char s[20] = "jai meher baba";
-    char t[20] = "me";
-    char a[20] = "tm";
-    // cout << strstr(s, t) << endl;
-    cout << strstr(s, a) << endl;
+{	
+    char a[20];
+    int i,l;
+    cout<<"ENTER A STRING\n";
+    cin>>a;
+    cout<<a<<endl;
 
-    return 0;
+    l=strlen(a);
+    cout<<l<<endl;
+
+    for(i=l-1;i>=0;i--)
+    {
+        printf("%c",a[i]);
+    }
+    cout<<endl;
+return 0;
 }
