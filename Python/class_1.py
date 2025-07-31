@@ -17,5 +17,5 @@ class person:
 
 a = person()  # AN OBJECT OF CLASS "person" IS CRREATED.
 a.name = "DEVANSH"
-a.occupation = "engineer"
+a.occupation = "MACHINE LEARNING engineer"
 a.info()
