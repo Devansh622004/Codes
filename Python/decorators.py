@@ -20,3 +20,14 @@ def say_hello():
 say_hello()
 
 # 🎉 You didn’t change the code inside say_hello, but you added behavior before and after it runs.
+
+# This:
+# @log_decorator
+# def say_hello():
+#     print("Hello!")
+
+# Is exactly the same as:
+# def say_hello():
+#     print("Hello!")
+#
+# say_hello = log_decorator(say_hello)
