@@ -9,6 +9,8 @@ void structure()
     printf(" %c |%c |%c \n");
 }
 
+// void 
+
 void main()
 {
     structure();

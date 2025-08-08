@@ -21,4 +21,4 @@ console.log(i + d);
 // The const keyword declares variables that cannot be reassigned. It’s block-scoped as well.
 const PI = 3.14;
 
-confirm("ARE YOU A GAY ?");
+confirm("ARE YOU A GAME ?");
