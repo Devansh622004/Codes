@@ -10,5 +10,7 @@ else:
     else:
         print("PRIME NO.")
 
+
+
 # PROGRAM:-
 # reverse of a no.
