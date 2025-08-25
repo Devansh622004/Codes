@@ -11,7 +11,7 @@ def add(a, b):      # Here, we don’t know if a and b are integers, floats, or 
 
 # ✅ Example with type annotation:-
 
-def add2(a: int, b: int) -> int:
+def add2(a: int, b: int):
     return a + b
 
 # This tells us:-
