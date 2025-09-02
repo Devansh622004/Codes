@@ -1,3 +1,5 @@
+# Alternative of SWITCH - CASE dictionary mapping
+
 def switch(day):
     return {
         1: "Monday",
