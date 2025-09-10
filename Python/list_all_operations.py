@@ -1,39 +1,45 @@
-# LIST CREATION, slici, del
-list1 = [22, 11, 55, 33, 44]
+# List operations in Python
 
-# ACCESSING
-print("ACCESSING LIST: ")
-print(list1, "\n")
+# Creating a list
+my_list = [10, 20, 30, 40, 50]
 
-# SORTING
-print("SORTING: ")
-list1.sort()
-print(list1, "\n")
+# Accessing elements
+print("First element:", my_list[0])
+print("Last element:", my_list[-1])
 
-# TRAVERSING
-print("TRAVERSING: ")
-for item in list1:
+# Slicing
+print("Sliced list (1 to 3):", my_list[1:4])
+
+# Modifying
+my_list[2] = 99
+print("Modified list:", my_list)
+
+# Adding elements
+my_list.append(60)
+print("After append:", my_list)
+
+my_list.insert(2, 15)
+print("After insert at index 2:", my_list)
+
+# Removing elements
+my_list.remove(99)
+print("After removing 99:", my_list)
+
+my_list.pop()
+print("After pop:", my_list)
+
+# Sorting
+my_list.sort()
+print("Sorted list:", my_list)
+
+# Reversing
+my_list.reverse()
+print("Reversed list:", my_list)
+
+# Length
+print("Length of list:", len(my_list))
+
+# Looping through list
+print("Looping through list:")
+for item in my_list:
     print(item)
-print("\n")
-
-# LENGTH
-print("LENGTH OF THE LIST: ", len(list1), "\n")
-
-# REVERSING
-print("REVERSE OF THE LIST: ")
-list1.reverse()
-print(list1, "\n")
-
-# MODIFYING
-print("MODIFYING THE LIST: ")
-list1[0] = 0
-print(list1[0], "\n")
-
-# SLICING
-print("SLICING THE LIST: ")
-print(list1[2:4], "\n")
-
-# DELETING
-print("DELETING")
-list1.pop(0)
-print(list1)
