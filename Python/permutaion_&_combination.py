@@ -20,3 +20,4 @@ else:
 
     print(f"P({n}, {r}) = {p}")
     print(f"C({n}, {r}) = {c}")
+
