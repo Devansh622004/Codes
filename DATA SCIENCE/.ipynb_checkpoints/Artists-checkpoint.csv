@@ -1,0 +1,10 @@
+Name,ID,Gender,Age,Country,Genres,Popularity,Followers
+Drake,3TVXtAsR1Inumwj472S9r4,male,33,CA,"['canadian hip hop', 'canadian pop', 'hip hop', 'pop rap', 'rap']",95,83298497
+Post Malone,246dkjvS1zLTtiykXe5h60,male,25,US,"['dfw rap', 'melodic rap', 'pop', 'rap']",86,43130108
+Ed Sheeran,6eUKZXaKkcviH0Ku9w2n3V,male,29,GB,"['pop', 'singer-songwriter pop', 'uk pop']",87,115998928
+J Balvin,1vyhD5VmyZ7KMfW5gqLgo5,male,35,CO,"['reggaeton', 'reggaeton colombiano', 'trap latino', 'urbano latino']",83,38028010
+Bad Bunny,4q3ewBCX7sLwd24euuV69X,male,26,PR,"['reggaeton', 'trap latino', 'urbano latino']",95,77931484
+Justin Bieber,1uNFoZAHBGtllmzznpCI3s,male,26,CA,"['canadian pop', 'pop']",88,75112165
+Ozuna,1i8SpTcr7yvPOmcqrbnVXY,male,28,PR,"['puerto rican pop', 'reggaeton', 'trap latino', 'urbano latino']",84,38192380
+Ariana Grande,66CXWjxzNUsdJxJ2JdwvnR,female,27,US,['pop'],88,95710972
+Khalid,6LuN9FCkKOj5PcnpouEgny,male,22,US,"['pop', 'pop r&b']",81,16282583
