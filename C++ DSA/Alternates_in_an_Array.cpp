@@ -8,7 +8,7 @@ public:
     vector<int> getAlternates(vector<int> &arr) {
         vector<int> out;
         for(int i = 0; i < arr.size(); i += 2) {
-            out.push_back(arr[i]);
+            out.push_back(arr[i]);  // push_back() function is used to add (or insert) an element at the end of a vector.
         }
         return out;
     }
