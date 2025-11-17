@@ -25,4 +25,4 @@ maze = {
     'Exit': []
 }
 
-dfs(maze, 'A')
+dfs(maze, 'Entrance')
