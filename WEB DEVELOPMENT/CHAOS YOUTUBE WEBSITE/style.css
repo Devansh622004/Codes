@@ -1,0 +1,194 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+  background-color: #181818;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: #ff0000;
+  font-size: 22px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+}
+
+/* HERO SECTION */
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/thumbnails/bg.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 40px;
+  text-align: center;
+  min-height: 400px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  color: #dddddd;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: #ff0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Bouncy bulge */
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.btn:hover {
+  transform: scale(1.1) translateY(-3px); /* Bulges out + lifts up */
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.5);
+  background-color: #cc0000;
+}
+
+/* COMMON SECTION */
+.section {
+  padding: 40px;
+}
+
+/* VIDEO CARDS - FIXED WORKING VERSION */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(145deg, #8a2be2, #663399);
+  border-radius: 14px;  /* Increased for visible border space */
+  overflow: hidden;
+  transition: transform 0.3s;
+  height: 310px;
+  position: relative;
+  padding: 6px;  /* Creates border space */
+  box-sizing: content-box;  /* Important: allows padding to add to size */
+  will-change: transform;  /* Tells browser to optimize */
+  transform: translateZ(0); /* Forces GPU acceleration */
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth easing */
+
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
+  background: inherit;  /* Inherits purple gradient */
+  border-radius: 8px;   /* Inner content rounded */
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;  /* Covers entire card */
+  background: conic-gradient(#FF00FF);
+  border-radius: 14px;
+  animation: spin 1s infinite linear;
+  z-index: 0;
+  will-change: transform;
+  transform: translateZ(0);
+  animation: spin 0.8s infinite linear; /* Your preferred speed */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  background-color: #000;
+}
+
+.card h3 {
+  padding: 15px;
+  font-size: 18px;
+  height: 142px;        /* Set desired height */
+  line-height: 24px;   /* Adjust for text centering */
+  display: flex;
+  align-items: center; /* Vertically centers text */
+  justify-content: center; 
+}
+
+
+/* SPIN ANIMATION */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #181818;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;  /* Removes underline */
+    color: #ffffff;         /* Sets white color */
+}
+
+.card-link h3 {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(255,0,0,0.3); }
+    50% { box-shadow: 0 0 40px rgba(255,0,0,0.8), 0 0 60px rgba(138,43,226,0.4); }
+}
+
+.card { animation-play-state: paused; }
+.card:hover { animation-play-state: running !important; }
