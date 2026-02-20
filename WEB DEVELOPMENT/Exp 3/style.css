@@ -1,0 +1,113 @@
+body{
+background:black;
+font-family:'Orbitron',sans-serif;
+color:#0ff;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+.cyber-nav{
+background:rgba(0,0,20,0.8);
+backdrop-filter:blur(8px);
+border-bottom:1px solid cyan;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
+radial-gradient(circle at center,#001,#000);
+}
+
+/* HOLOGRAM TEXT */
+.holo{
+font-size:60px;
+color:#0ff;
+text-shadow:
+0 0 5px #0ff,
+0 0 10px #0ff,
+0 0 20px #0ff;
+animation:flicker 2s infinite alternate;
+}
+
+@keyframes flicker{
+0%{opacity:1}
+100%{opacity:.7}
+}
+
+/* NEON TITLE */
+.neon{
+color:#0ff;
+text-shadow:0 0 15px #0ff;
+}
+
+/* CYBER CARD */
+.cyber-card{
+padding:25px;
+border:1px solid cyan;
+border-radius:15px;
+background:rgba(0,255,255,0.05);
+text-align:center;
+transition:.4s;
+position:relative;
+overflow:hidden;
+}
+
+.cyber-card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 0 30px cyan;
+}
+
+/* BUTTON */
+.cyber-btn{
+border:2px solid cyan;
+transition:.3s;
+}
+
+.cyber-btn:hover{
+background:cyan;
+color:black;
+box-shadow:0 0 20px cyan;
+}
+
+/* GLITCH LOGO */
+.glitch{
+position:relative;
+color:#0ff;
+}
+
+.glitch::before,
+.glitch::after{
+content:attr(class);
+position:absolute;
+left:0;
+top:0;
+opacity:.5;
+}
+
+.glitch::before{
+color:red;
+transform:translateX(-2px);
+}
+
+.glitch::after{
+color:blue;
+transform:translateX(2px);
+}
+
+/* SCANLINES */
+body::after{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+background:repeating-linear-gradient(
+transparent 0px,
+transparent 2px,
+rgba(0,255,255,0.05) 3px
+);
+}

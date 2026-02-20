@@ -192,3 +192,51 @@ footer {
 
 .card { animation-play-state: paused; }
 .card:hover { animation-play-state: running !important; }
+
+.contact-box {
+    background: #111;
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    margin: 20px auto;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(255,0,0,0.4);
+}
+
+.contact-box p {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.contact-box a {
+    color: #ff4747;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* Make body full height layout */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content should expand */
+.section {
+    flex: 1;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    color: white;
+}
