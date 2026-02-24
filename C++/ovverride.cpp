@@ -16,6 +16,8 @@ public:
 
 class Derived : public Base {
 public:
+    using Base::show;   // Fix: Prevent function hiding
+
     // Function overriding
     void display() override {
         cout << "Derived::display() called" << endl;
@@ -32,13 +34,13 @@ int main() {
     Derived d;
 
     // Function overriding
-    b.display(); // Calls Base::display()
-    d.display(); // Calls Derived::display()
+    b.display(); // Base version
+    d.display(); // Derived version
 
     // Function overloading
-    b.show();    // Calls Base::show()
-    d.show();    // Calls Base::show() as there's no overloaded version in Derived
-    d.show(10);  // Calls Derived::show(int)
+    b.show();    // Base::show()
+    d.show();    // Now works correctly
+    d.show(10);  // Derived::show(int)
 
     return 0;
 }
